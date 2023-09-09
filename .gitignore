@@ -3,7 +3,7 @@
 .idea
 # Log file
 *.log
-
+node_modules
 # BlueJ files
 *.ctxt
 
