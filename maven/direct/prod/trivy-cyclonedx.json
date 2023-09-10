@@ -1,0 +1,266 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:0402557d-f6c7-4413-ad3b-db4320d242f0",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-09-10T02:56:42+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.45.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "7523dd6a-d171-4286-80f7-0b10066b37ba",
+      "type": "application",
+      "name": ".",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "cb9dde90-f11a-4895-9ad5-9d70fd7f679e",
+      "type": "application",
+      "name": "pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/ant/ant-launcher@1.6.5",
+      "type": "library",
+      "name": "ant:ant-launcher",
+      "version": "1.6.5",
+      "purl": "pkg:maven/ant/ant-launcher@1.6.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ant:ant-launcher:1.6.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/ant/ant@1.6.5",
+      "type": "library",
+      "name": "ant:ant",
+      "version": "1.6.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "The Apache Software License, Version 2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ant/ant@1.6.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ant:ant:1.6.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/cglib/cglib-nodep@2.2",
+      "type": "library",
+      "name": "cglib:cglib-nodep",
+      "version": "2.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "ASF 2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/cglib/cglib-nodep@2.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "cglib:cglib-nodep:2.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+      "type": "library",
+      "name": "com.thoughtworks.xstream:xstream",
+      "version": "1.4.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD style"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "com.thoughtworks.xstream:xstream:1.4.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/xml-resolver/xml-resolver@1.2",
+      "type": "library",
+      "name": "xml-resolver:xml-resolver",
+      "version": "1.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "The Apache Software License, Version 2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/xml-resolver/xml-resolver@1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "xml-resolver:xml-resolver:1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/xmlpull/xmlpull@1.1.3.1",
+      "type": "library",
+      "name": "xmlpull:xmlpull",
+      "version": "1.1.3.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unlicense"
+          }
+        }
+      ],
+      "purl": "pkg:maven/xmlpull/xmlpull@1.1.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "xmlpull:xmlpull:1.1.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/xpp3/xpp3_min@1.1.4c",
+      "type": "library",
+      "name": "xpp3:xpp3_min",
+      "version": "1.1.4c",
+      "licenses": [
+        {
+          "license": {
+            "name": "Indiana University Extreme! Lab Software License"
+          }
+        },
+        {
+          "license": {
+            "name": "vesion 1.1.1"
+          }
+        },
+        {
+          "license": {
+            "name": "Unlicense"
+          }
+        }
+      ],
+      "purl": "pkg:maven/xpp3/xpp3_min@1.1.4c",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "xpp3:xpp3_min:1.1.4c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "pom"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "7523dd6a-d171-4286-80f7-0b10066b37ba",
+      "dependsOn": [
+        "cb9dde90-f11a-4895-9ad5-9d70fd7f679e"
+      ]
+    },
+    {
+      "ref": "cb9dde90-f11a-4895-9ad5-9d70fd7f679e",
+      "dependsOn": [
+        "pkg:maven/ant/ant-launcher@1.6.5",
+        "pkg:maven/ant/ant@1.6.5",
+        "pkg:maven/cglib/cglib-nodep@2.2",
+        "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+        "pkg:maven/xml-resolver/xml-resolver@1.2"
+      ]
+    },
+    {
+      "ref": "pkg:maven/ant/ant-launcher@1.6.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/ant/ant@1.6.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/cglib/cglib-nodep@2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.5",
+      "dependsOn": [
+        "pkg:maven/xmlpull/xmlpull@1.1.3.1",
+        "pkg:maven/xpp3/xpp3_min@1.1.4c"
+      ]
+    },
+    {
+      "ref": "pkg:maven/xml-resolver/xml-resolver@1.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/xmlpull/xmlpull@1.1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/xpp3/xpp3_min@1.1.4c",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}
