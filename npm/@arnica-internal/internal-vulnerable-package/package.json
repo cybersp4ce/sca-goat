@@ -1,0 +1,17 @@
+{
+  "name": "@arnica-internal/internal-vulnerable-package",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "@arnica-internal:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "url-parse": "1.4.7"
+  }
+}
