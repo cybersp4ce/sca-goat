@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@arnica-internal/internal-vulnerable-package": "1.0.2"
+    "@arnica-internal/internal-vulnerable-package": "1.0.1"
   }
 }
