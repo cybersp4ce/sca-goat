@@ -1,0 +1,17 @@
+{
+  "name": "package-v2-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "verdaccio-htpasswd": "11.0.0-6-next.42"
+  },
+  "dependencies": {
+    "semver": "7.5.0"
+  }
+}

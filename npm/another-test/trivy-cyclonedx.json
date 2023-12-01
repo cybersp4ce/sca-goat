@@ -1,0 +1,244 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:0e248748-ae67-4bb3-99fe-e125b1a7b576",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-09-22T18:34:41+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.45.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "9d3b651b-441a-4fb3-995d-a1cb1eac3177",
+      "type": "application",
+      "name": ".",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "663bc5c7-1931-4edc-a54d-9c185b230b97",
+      "type": "application",
+      "name": "package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/%40angular/dev-infra-private@git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fdev-infra-private-builds.git%23e4a13cfd135ec766dc9148ba4fe4d3ac76d94137",
+      "type": "library",
+      "name": "@angular/dev-infra-private",
+      "version": "git+https://github.com/angular/dev-infra-private-builds.git#e4a13cfd135ec766dc9148ba4fe4d3ac76d94137",
+      "purl": "pkg:npm/%40angular/dev-infra-private@git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fdev-infra-private-builds.git%23e4a13cfd135ec766dc9148ba4fe4d3ac76d94137",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "@angular/dev-infra-private@git+https://github.com/angular/dev-infra-private-builds.git#e4a13cfd135ec766dc9148ba4fe4d3ac76d94137"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/%40bazel/typescript@4.4.6",
+      "type": "library",
+      "name": "@bazel/typescript",
+      "version": "4.4.6",
+      "purl": "pkg:npm/%40bazel/typescript@4.4.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "@bazel/typescript@4.4.6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:npm/semver@5.6.0",
+      "type": "library",
+      "name": "semver",
+      "version": "5.6.0",
+      "purl": "pkg:npm/semver@5.6.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "semver@5.6.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "npm"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "663bc5c7-1931-4edc-a54d-9c185b230b97",
+      "dependsOn": [
+        "pkg:npm/%40angular/dev-infra-private@git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fdev-infra-private-builds.git%23e4a13cfd135ec766dc9148ba4fe4d3ac76d94137"
+      ]
+    },
+    {
+      "ref": "9d3b651b-441a-4fb3-995d-a1cb1eac3177",
+      "dependsOn": [
+        "663bc5c7-1931-4edc-a54d-9c185b230b97"
+      ]
+    },
+    {
+      "ref": "pkg:npm/%40angular/dev-infra-private@git%2Bhttps%3A%2F%2Fgithub.com%2Fangular%2Fdev-infra-private-builds.git%23e4a13cfd135ec766dc9148ba4fe4d3ac76d94137",
+      "dependsOn": [
+        "pkg:npm/%40bazel/typescript@4.4.6"
+      ]
+    },
+    {
+      "ref": "pkg:npm/%40bazel/typescript@4.4.6",
+      "dependsOn": [
+        "pkg:npm/semver@5.6.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/semver@5.6.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2022-25883",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "cbl-mariner"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        1333
+      ],
+      "description": "Versions of the package semver before 7.5.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the function new Range, when untrusted user data is provided as a range.\r\r\r",
+      "recommendation": "Upgrade semver to version 7.5.2, 6.3.1, 5.7.2",
+      "advisories": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-25883"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw"
+        },
+        {
+          "url": "https://github.com/npm/node-semver"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/classes/range.js#L97-L104"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/classes/range.js%23L97-L104"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/internal/re.js#L138"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/internal/re.js#L160"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/internal/re.js%23L138"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/blob/main/internal/re.js%23L160"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/commit/2f8fd41487acf380194579ecb6f8b1bbfe116be0"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/commit/717534ee353682f3bcf33e60a8af4292626d4441"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/commit/928e56d21150da0413a3333a3148b20e741a920c"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/pull/564"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/pull/585"
+        },
+        {
+          "url": "https://github.com/npm/node-semver/pull/593"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-25883"
+        },
+        {
+          "url": "https://security.snyk.io/vuln/SNYK-JS-SEMVER-3247795"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2022-25883"
+        }
+      ],
+      "published": "2023-06-21T05:15:00+00:00",
+      "updated": "2023-07-12T00:53:00+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/semver@5.6.0",
+          "versions": [
+            {
+              "version": "5.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
